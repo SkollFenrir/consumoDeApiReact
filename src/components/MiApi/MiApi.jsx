@@ -14,7 +14,7 @@ const MiApi = ({ onData, onNewData }) => {
 		}
 	}, [newInfo]);
 	//Consumo de datos y seteo de informacion
-	const consultInfo = async (state) => {
+	const consultInfo = async () => {
 		const consult = await axios.get(
 			'https://rickandmortyapi.com/api/character'
 		);
@@ -25,7 +25,7 @@ const MiApi = ({ onData, onNewData }) => {
 	const handlerOnData = () => {
 		onData(info);
 	};
-	// Activacion de la comunicacion 
+	// Activacion de la comunicacion
 	useEffect(() => {
 		handlerOnData();
 		handlerNewInfoData();
@@ -40,7 +40,7 @@ const MiApi = ({ onData, onNewData }) => {
 			{info != null
 				? info.map((character, i) => (
 						<Cards
-							key={character.id}
+							key={i}
 							name={character.name}
 							img={character.image}
 							status={character.status}

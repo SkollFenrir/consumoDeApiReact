@@ -1,1 +1,1 @@
-export {Input} from './Input.jsx';
+export {Busqueda} from './Busqueda.jsx';
