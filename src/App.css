@@ -11,3 +11,11 @@
 	gap: 60px;
 	background-color: rgb(32, 35, 41);
 }
+.Footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(70, 69, 73, 0.897);
+	color: aliceblue;
+}

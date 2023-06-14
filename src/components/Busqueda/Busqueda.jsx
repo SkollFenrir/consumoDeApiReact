@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 
-function Input({ placeholder, type, onChangeInput }) {
+function Busqueda({ placeholder, type, onChangeInput }) {
 	//onChangeInput comunica con el componente Padre. Ayuda a tener una comunicacion directa, corrigiendo el delay.
 	return (
 		<Form.Control
@@ -12,4 +12,4 @@ function Input({ placeholder, type, onChangeInput }) {
 	);
 }
 
-export default Input;
+export default Busqueda;
