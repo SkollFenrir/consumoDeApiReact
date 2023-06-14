@@ -1,0 +1,1 @@
+export {NavbarP} from './NavbarP.jsx';
